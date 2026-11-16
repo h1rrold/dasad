@@ -1,0 +1,27 @@
+name: RelicPowers
+version: ${project.version}
+main: dev.relicpowers.RelicPowers
+api-version: '1.21'
+description: 30 holdable relic powers + a unique mace, with an upgrader and a reroller
+commands:
+  ability:
+    description: Use the ability of the relic you are holding (or carrying)
+    usage: /ability <1|2>
+    aliases: [power]
+    permission: relicpowers.use
+  relic:
+    description: Admin commands for relic powers
+    usage: /relic <give|set|tier|remove|reroll|upgrade|info|reload>
+    permission: relicpowers.admin
+  powers:
+    description: Browse every relic power
+    usage: /powers
+    aliases: [relics]
+    permission: relicpowers.use
+permissions:
+  relicpowers.use:
+    description: Use relic powers
+    default: true
+  relicpowers.admin:
+    description: Manage relic powers
+    default: op
