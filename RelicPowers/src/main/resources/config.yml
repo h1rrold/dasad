@@ -1,0 +1,37 @@
+# ---------------- RelicPowers ----------------
+
+# Everyone who joins for the first time gets one random (non-legendary) relic power.
+give-on-first-join: true
+
+# When do passives work?
+#   INVENTORY = while the relic is anywhere in your inventory
+#   HAND      = only while you hold it (main hand or off hand)
+#   ALWAYS    = always (the item is just a display)
+passive-mode: INVENTORY
+
+# Right-click = ability 1, sneak + right-click = ability 2.
+# The /ability 1 and /ability 2 commands always work (alias: /power 1, /power 2).
+right-click-abilities: true
+
+# Relic items can't be dropped or stored in chests/shulkers, and come back after you die.
+soulbound: true
+
+# If true, dying drops you back to tier 1.
+death-resets-tier: false
+
+# Tier 2 abilities have their cooldown multiplied by this.
+tier2-cooldown-multiplier: 0.75
+
+# Chance that the reroller gives a LEGENDARY power (Dial, Thunder, Heavens Eye, Ace, Manifestation).
+legendary-reroll-chance: 0.06
+
+# Crafting recipes (see README.txt for the patterns)
+recipes:
+  upgrader: true
+  reroller: true
+
+# Rename any power:  names: { artimes: "Artemis" }
+names: {}
+
+# Override any cooldown (seconds):  cooldowns: { erebus: { 1: 30 } }
+cooldowns: {}
